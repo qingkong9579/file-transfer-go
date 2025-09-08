@@ -11,6 +11,18 @@ export interface IceServerConfig {
 
 const DEFAULT_ICE_SERVERS: IceServerConfig[] = [
   {
+    id: 'miwifi-stun',
+    urls: 'stun.miwifi.com:3478',
+    type: 'stun',
+    enabled: true,
+  },
+  {
+    id: 'newtock-stun',
+    urls: 'stun.newtocktech.com:3478',
+    type: 'stun',
+    enabled: true,
+  },
+  {
     id: 'google-stun-1',
     urls: 'stun:stun.l.google.com:19302',
     type: 'stun',
